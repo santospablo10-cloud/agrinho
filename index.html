@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulador de equilíbrio entre produção agrícola e sustentabilidade ambiental - Agro Forte, Futuro Sustentável">
+    <title>Agro Sustentável - Simulador de Equilíbrio</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 Agro Forte, Futuro Sustentável</h1>
+        <p>Encontre o equilíbrio entre produção e preservação ambiental</p>
+    </header>
 
+    <main class="container">
+        <section class="painel-escolhas">
+            <h2>Escolha sua Estratégia de Produção:</h2>
+            <div class="botoes-acoes">
+                <button id="btn-sustentavel" class="btn btn-sustentavel">
+                    🌿 Rotação de Culturas & Reflorestamento
+                </button>
+                <button id="btn-intensivo" class="btn btn-intensivo">
+                    🌾 Monocultura Tradicional
+                </button>
+            </div>
+        </section>
+
+        <section class="painel-status">
+            <h2>Status da Propriedade</h2>
+            
+            <div class="status-item">
+                <span class="label">Produtividade:</span>
+                <span id="status-producao" class="valor">0</span> toneladas
+            </div>
+            
+            <div class="status-item">
+                <span class="label">Preservação Ambiental:</span>
+                <span id="status-natureza" class="valor">100</span>%
+            </div>
+
+            <p id="mensagem-alerta" class="alerta" role="alert" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Concurso de Programação Agrinho 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
